@@ -1,6 +1,6 @@
 import { NumberTicker } from '@/components/magicui/number-ticker'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { CardContent, CardFooter } from '@/components/ui/card'
 import { Plus } from 'lucide-react'
 import React from 'react'
 
