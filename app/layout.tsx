@@ -1,8 +1,11 @@
+
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/custom/theme-provider";
 import { SiteHeader } from "@/components/custom/site/navbar/header";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import ClickSpark from "@/components/click-spark";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -21,6 +24,14 @@ export default function RootLayout({
       <body
         className={`${font.className} antialiased`}
       >
+        <ClickSpark
+  sparkColor='#fff'
+  sparkSize={10}
+  sparkRadius={15}
+  sparkCount={8}
+  duration={400}
+>
+        <ScrollProgress/>
         <SiteHeader/>
         <ThemeProvider
             attribute="class"
@@ -28,10 +39,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex h-screen w-screen">
+            <div className="flex h-full w-full">
             {children}
             </div>
           </ThemeProvider>
+          </ClickSpark>
       </body>
     </html>
   );

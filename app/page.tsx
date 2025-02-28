@@ -1,4 +1,6 @@
 import HeroSection from "@/components/custom/site/hero/hero";
+import StacksComp from "@/components/custom/site/hero/stacks";
+import WlcBtn from "@/components/custom/wlc.btn";
 import { AnimatedGridPattern } from "@/components/magicui/animated-grid-pattern";
 
 export default function Home() {
@@ -13,7 +15,11 @@ export default function Home() {
         className="z-[-2]"
       />
       <div className="my-10">
+      <div className="flex items-center justify-center mb-0">
+        <WlcBtn/>
+      </div>
       <HeroSection/>
+      <StacksComp/>
       </div>
     </div>
   );
