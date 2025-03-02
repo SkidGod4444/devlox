@@ -1,8 +1,10 @@
 import WinningEdge from "@/components/custom/site/bentos/winning-edge";
 import FaqSection from "@/components/custom/site/faq/faq";
+import FounderSection from "@/components/custom/site/founder/founder";
 import HeroSection from "@/components/custom/site/hero/hero";
 import StacksComp from "@/components/custom/site/hero/stacks";
 import ProjShowcase from "@/components/custom/site/projects/showcase";
+import ServicesComp from "@/components/custom/site/services/services";
 import WlcBtn from "@/components/custom/wlc.btn";
 import { AnimatedGridPattern } from "@/components/magicui/animated-grid-pattern";
 
@@ -28,9 +30,19 @@ export default function Home() {
         </div>
       </div>
 
-      <ProjShowcase />
-      <WinningEdge/>
-      <FaqSection/>
+      {/* Wrap the border elements in a container to limit their scope */}
+      <div className="relative w-full">
+        <div className="absolute inset-y-0 left-0 w-2 border-l-2 border-border ml-20" />
+        <div className="absolute inset-y-0 left-2 w-2 border-l-2 border-border ml-15" />
+        <div className="absolute inset-y-0 right-0 w-2 border-r-2 border-border mr-20" />
+        <div className="absolute inset-y-0 right-2 w-2 border-r-2 border-border mr-15" />
+        
+        <ProjShowcase />
+        <WinningEdge />
+        <ServicesComp/>
+        <FounderSection/>
+        <FaqSection />
+      </div>
     </div>
   );
 }
