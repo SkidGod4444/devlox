@@ -36,8 +36,8 @@ export function SiteHeader() {
         )}
       >
         <div className="flex-shrink-0 flex flex-row items-center w-[150px] rounded-2xl">
-          <Image src={"/logo2.png"} height={60} width={60} alt="000" className="rounded-full"/>
-          <span className="text-2xl font-serif ml-0">Devlox</span>
+          <Image src={"/logoo.png"} height={60} width={60} alt="000" className="rounded-full" draggable={false}/>
+          {/* <span className="text-2xl font-medium ml-0">Devlox</span> */}
         </div>
 
         {/* Centered MainNav */}

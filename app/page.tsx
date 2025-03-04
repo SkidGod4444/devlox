@@ -38,10 +38,18 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center gap-30">
         <ProjShowcase />
         <WinningEdge />
+        <section id="pricing" className="flex flex-col h-full w-full">
         <ServicesComp/>
+        </section>
+        <section id="founder" className="flex flex-col h-full w-full">
         <FounderSection/>
+        </section>
+        <section id="faq" className="flex flex-col h-full w-full">
         <FaqSection />
+        </section>
+        <section id="book" className="flex flex-col h-full w-full">
         <BookingCard/>
+        </section>
         </div>
       </div>
     </div>
