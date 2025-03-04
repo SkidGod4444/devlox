@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function HeroSection() {
   return (
-    <div className='flex flex-col z-50 items-center justify-center h-full w-full mt-0'>
+    <div className='flex flex-col z-50 mt-50 items-center justify-center h-full w-full'>
       <div className=' items-center justify-center w-[900px] relative'>
         <Image src="/imgs/hero/hand.png" alt='strike' draggable={false} height={150} width={150} className='absolute top-20 -left-60' />
         <h1 className='text-6xl font-bold line-clamp-3 text-center py-5'>Revitalize Your Digital Impact through  Boundless Creativity

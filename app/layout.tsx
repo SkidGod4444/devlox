@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/custom/theme-provider";
 import { SiteHeader } from "@/components/custom/site/navbar/header";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ClickSpark from "@/components/click-spark";
+import { SiteFooter } from "@/components/custom/site/footer/footer";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function RootLayout({
             {children}
             </div>
           </ThemeProvider>
+          <SiteFooter/>
           </ClickSpark>
       </body>
     </html>

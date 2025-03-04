@@ -15,32 +15,32 @@ export default function FaqSection() {
       <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1" className='bg-background px-4 rounded-2xl border-border border mb-5'>
         <AccordionTrigger className='text-2xl cursor-pointer'>How long does it take to complete a 1-page and 5-page website?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className='text-xl text-muted-foreground'>
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className='bg-background px-4 rounded-2xl border-border border my-5'>
         <AccordionTrigger className='text-2xl cursor-pointer'>Do you offer ongoing support and maintenance services?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className='text-xl text-muted-foreground'>
           Yes. It comes with default styles that matches the other
           components&apos; aesthetic.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className='bg-background px-4 rounded-2xl border-border border mt-5'>
         <AccordionTrigger className='text-2xl cursor-pointer'>Is it animated?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className='text-xl text-muted-foreground'>
           Yes. It&apos;s animated by default, but you can disable it if you prefer.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4" className='bg-background px-4 rounded-2xl border-border border mt-5'>
         <AccordionTrigger className='text-2xl cursor-pointer'>Are there any additional costs I should be aware of?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className='text-xl text-muted-foreground'>
           Yes. It&apos;s animated by default, but you can disable it if you prefer.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-6" className='bg-background px-4 rounded-2xl border-border border mt-5'>
         <AccordionTrigger className='text-2xl cursor-pointer'>Do you offer website re-design services? </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className='text-xl text-muted-foreground'>
           Yes. It&apos;s animated by default, but you can disable it if you prefer.
         </AccordionContent>
       </AccordionItem>

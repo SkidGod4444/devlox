@@ -7,7 +7,6 @@ import StacksComp from "@/components/custom/site/hero/stacks";
 import BookingCard from "@/components/custom/site/meet/booking-card";
 import ProjShowcase from "@/components/custom/site/projects/showcase";
 import ServicesComp from "@/components/custom/site/services/services";
-import WlcBtn from "@/components/custom/wlc.btn";
 import { AnimatedGridPattern } from "@/components/magicui/animated-grid-pattern";
 
 export default function Home() {
@@ -24,9 +23,6 @@ export default function Home() {
           className="absolute inset-0 z-[-1]"
         />
         <div className="my-10">
-          <div className="flex items-center justify-center mb-0">
-            <WlcBtn />
-          </div>
           <HeroSection />
           <StacksComp />
         </div>
@@ -34,10 +30,10 @@ export default function Home() {
 
       {/* Wrap the border elements in a container to limit their scope */}
       <div className="relative w-full">
-        <div className="absolute inset-y-0 left-0 w-2 border-l-2 border-border ml-20" />
-        <div className="absolute inset-y-0 left-2 w-2 border-l-2 border-border ml-8" />
-        <div className="absolute inset-y-0 right-0 w-2 border-r-2 border-border mr-20" />
-        <div className="absolute inset-y-0 right-2 w-2 border-r-2 border-border mr-8" />
+        <div className="absolute inset-y-0 left-0 w-2 border-l border-border ml-20" />
+        <div className="absolute inset-y-0 left-2 w-2 border-l border-border ml-8" />
+        <div className="absolute inset-y-0 right-0 w-2 border-r border-border mr-20" />
+        <div className="absolute inset-y-0 right-2 w-2 border-r border-border mr-8" />
         
         <div className="flex flex-col items-center justify-center gap-30">
         <ProjShowcase />

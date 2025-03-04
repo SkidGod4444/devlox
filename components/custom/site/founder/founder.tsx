@@ -7,7 +7,7 @@ export default function FounderSection() {
   return (
     <div className='flex flex-col items-center justify-center h-full w-full relative'>
        <div className="w-full px-20 mb-40">
-        <div className="border-t-2 border-border" />
+        <div className="border-t border-border" />
       </div>
       <div className="flex flex-col w-[800px] mx-auto z-[500] rounded-4xl border-t-2 border-r border-border/60 border-opacity-80 bg-gradient-to-br from-secondary/40 to-muted/60 bg-background backdrop-blur-lg supports-[backdrop-filter]:bg-background dark:border-border shadow-2xl items-center relative">
         <CardHeader className='flex flex-row items-center justify-center p-5 w-full rounded-t-4xl bg-background'>
@@ -30,7 +30,7 @@ export default function FounderSection() {
         </CardFooter>
       </div>
       <div className="w-full px-20 mt-40">
-        <div className="border-b-2 border-border" />
+        <div className="border-b border-border" />
       </div>
     </div>
   )

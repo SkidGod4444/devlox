@@ -5,7 +5,7 @@ export default function BookingCard() {
   return (
     <div className="flex flex-col items-center justify-center h-full w-full">
       <div className="w-full px-20 mb-40">
-        <div className="border-t-2 border-border" />
+        <div className="border-t border-border" />
       </div>
       <h1 className="text-7xl font-serif mt-10">
         Make a <span className="text-red-500">15-min call</span>
@@ -16,9 +16,9 @@ export default function BookingCard() {
       <div className="flex items-center justify-center h-full w-full mt-20">
         <Booker />
       </div>
-      <div className="w-full px-20 mt-40">
+      {/* <div className="w-full px-20 mt-40">
         <div className="border-b-2 border-border" />
-      </div>
+      </div> */}
     </div>
   );
 }
