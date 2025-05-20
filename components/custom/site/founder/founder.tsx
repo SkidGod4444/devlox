@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function FounderSection() {
@@ -21,12 +22,19 @@ export default function FounderSection() {
         </CardHeader>
 
         <CardContent className='my-10 text-lg'>
-          <span>I’m a former football player turned web designer. I started Lander Studio to offer top-notch results with stress-free collaboration and fair pricing. My background in sports has instilled in me a commitment to precision and excellence, which I bring to every project. Let’s create a standout online presence together.</span>
+          <span>
+            Yooo! I am Saidev Dhal, a passionate software developer and a CS student with a knack for creating stunning and functional softwares. My journey in the tech world has been fueled by a love for innovation and a desire to make a positive impact through technology. I believe in the power of creativity and collaboration, and I&apos;m always eager to take on new challenges. Let&apos;s connect and explore the endless possibilities together!
+          </span>
         </CardContent>
 
         <CardFooter className="flex h-full w-full items-center justify-between mb-8 space-x-8">
-          <Button size={"lg"} className='flex cursor-pointer h-13 w-full text-xl'>@Saidev Dhal</Button>
+          <Link href={"https://l.devwtf.in/x"} target="_blank" rel="noreferrer" className='flex cursor-pointer h-13 w-full text-xl'>
+          <Button size={"lg"} className='flex cursor-pointer h-13 w-full text-xl'>Follow on X @Saidev Dhal</Button>
+          </Link>
+          
+          <Link href={"https://wa.me/+917684091475?text=Hii,%20Saidev%20I%20want%20to%20discuss%20my%20Idea%20with%20you."} target="_blank" rel="noreferrer" className='flex cursor-pointer h-13 w-full text-xl'>
           <Button size={"lg"} className='flex cursor-pointer h-13 w-full bg-red-500 hover:bg-red-500 text-white text-xl'>Talk to Founder</Button>
+          </Link>
         </CardFooter>
       </div>
       <div className="w-full px-20 mt-40">

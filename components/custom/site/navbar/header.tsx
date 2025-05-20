@@ -55,30 +55,32 @@ export function SiteHeader() {
               <span className="align-middle">Home</span>
             </Link>
             <Link
-              href="/redesign"
+              href="/works"
               className={cn(
                 "flex items-center transition-colors px-6 py-2 rounded-full cursor-pointer",
-                pathname?.startsWith("/redesign")
+                pathname?.startsWith("/works")
                   ? "text-black bg-white shadow-sm"
                   : " text-muted hover:text-black",
               )}
             >
-              <span className="align-middle">Redesign</span>
+              <span className="align-middle">Works</span>
             </Link>
             <Link
-              href="/works"
+              href="/feedbacks"
               className={cn(
                 "flex items-center transition-colors px-6 py-2 rounded-full cursor-pointer",
-                pathname?.startsWith("/works") ? "text-black bg-white shadow-sm" : " text-muted hover:text-black",
+                pathname?.startsWith("/feedbacks") ? "text-black bg-white shadow-sm" : " text-muted hover:text-black",
               )}
             >
-              <span className="align-middle">Works</span>
+              <span className="align-middle">Feedbacks</span>
             </Link>
           </div>
         </nav>
 
         <div className="flex-shrink-0">
-        <Button size="lg" className="w-full">Book a 15-min Call</Button>
+        <Link href={"#book"} className="w-full">
+        <Button size="lg" className="w-full cursor-pointer">Book a 15-min Call</Button>
+        </Link>
         </div>
       </div>
     </header>

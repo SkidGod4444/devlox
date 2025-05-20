@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function HeroSection() {
@@ -13,7 +14,7 @@ export default function HeroSection() {
         <Image src="/imgs/hero/heart.png" alt='strike' draggable={false} height={150} width={150} className='absolute -top-20 -right-50' />
       </div>
       <span className='text-xl line-clamp-3 w-[900px] mt-2 text-center text-muted-foreground'> {/* Reduced margin-top */}
-        I am a passionate and experienced web designer, dedicated to creating visually stunning and highly functional websites. Explore my portfolio to see the power of effective design in action
+        I am a passionate and experienced web developer, dedicated to creating visually stunning and highly functional websites. Explore my portfolio to see the power of effective design in action
       </span>
 
       <div className='relative flex mt-10'> {/* Reduced margin-top */}
@@ -26,12 +27,17 @@ export default function HeroSection() {
           className='absolute -top-6 left-[-160px]' 
         />
         <div className='flex z-50 items-center justify-between gap-5'>
+          <Link href={"#book"}>
           <Button size="lg" className='cursor-pointer font-sans bg-red-500 text-white hover:bg-red-500'>
             Let&apos;s Work Together
           </Button>
-          <Button variant="secondary" size="lg" className='cursor-pointer'>
-            Contact Me
+          </Link>
+          
+          <Link href={"https://wa.me/+917684091475?text=Hii,%20Saidev%20I%20want%20to%20discuss%20my%20Idea%20with%20you."} target="_blank" rel="noreferrer">
+          <Button variant="default" size="lg" className='cursor-pointer'>
+            Chat on WhatsApp
           </Button>
+          </Link>
         </div>
       </div>
     </div>
