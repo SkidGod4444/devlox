@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/custom/theme-provider";
-import { SiteHeader } from "@/components/custom/site/navbar/header";
+import { MobileSiteFooterNav, SiteHeader } from "@/components/custom/site/navbar/header";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ClickSpark from "@/components/click-spark";
 import { SiteFooter } from "@/components/custom/site/footer/footer";
@@ -33,6 +33,7 @@ export default function RootLayout({
   duration={400}
 >
         <ScrollProgress/>
+        <MobileSiteFooterNav />
         <SiteHeader/>
         <ThemeProvider
             attribute="class"

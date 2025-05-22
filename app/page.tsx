@@ -34,22 +34,22 @@ export default function Home() {
         <div className="absolute inset-y-0 left-2 w-2 border-l border-border ml-8" />
         <div className="absolute inset-y-0 right-0 w-2 border-r border-border mr-20" />
         <div className="absolute inset-y-0 right-2 w-2 border-r border-border mr-8" />
-        
+
         <div className="flex flex-col items-center justify-center gap-30">
-        <ProjShowcase />
-        <WinningEdge />
-        <section id="pricing" className="flex flex-col h-full w-full">
-        <ServicesComp/>
-        </section>
-        <section id="founder" className="flex flex-col h-full w-full">
-        <FounderSection/>
-        </section>
-        <section id="faq" className="flex flex-col h-full w-full">
-        <FaqSection />
-        </section>
-        <section id="book" className="flex flex-col h-full w-full">
-        <BookingCard/>
-        </section>
+          <ProjShowcase />
+          <WinningEdge />
+          <section id="pricing" className="flex flex-col h-full w-full">
+            <ServicesComp />
+          </section>
+          <section id="founder" className="flex flex-col h-full w-full">
+            <FounderSection />
+          </section>
+          <section id="faq" className="flex flex-col h-full w-full">
+            <FaqSection />
+          </section>
+          <section id="book" className="flex flex-col h-full w-full">
+            <BookingCard />
+          </section>
         </div>
       </div>
     </div>
