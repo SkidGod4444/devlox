@@ -19,7 +19,7 @@ export function SiteFooter() {
             Book a 15-min Call
           </Button>
         </Link>
-        <Link href={"https://wa.me/+917684091475?text=Hii,%20Saidev%20I%20want%20to%20discuss%20my%20Idea%20with%20you."} target="_blank" rel="noreferrer">
+        <Link href={"https://l.devwtf.in/wp"} target="_blank" rel="noreferrer">
           <Button variant="default" size="lg" className='cursor-pointer'>
             Chat on WhatsApp
           </Button>

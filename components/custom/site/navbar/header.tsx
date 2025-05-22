@@ -24,7 +24,8 @@ export function SiteHeader() {
   return (
     <header
       className={clsx(
-        "hidden md:flex fixed top-0 left-0 right-0 z-[5000] justify-center transition-all duration-500 ease-in-out",
+        "fixed top-0 left-20 right-20 z-[5000] justify-center transition-all duration-500 ease-in-out rounded-2xl",
+        "hidden md:flex"
       )}
     >
       <div
@@ -36,20 +37,18 @@ export function SiteHeader() {
         )}
       >
         <div className="flex-shrink-0 flex flex-row items-center">
-        <div className="flex-shrink-0 flex flex-row items-center w-[150px] rounded-2xl">
-          <Image src={"/logoo.png"} height={60} width={60} alt="000" className="rounded-full" draggable={false}/>
-          {/* <span className="text-2xl font-semibold ml-1">Devlox</span> */}
-        </div>
+          <div className="flex-shrink-0 flex flex-row items-center w-[150px] rounded-2xl">
+            <Image src={"/logoo.png"} height={60} width={60} alt="000" className="rounded-full" draggable={false}/>
+          </div>
         </div>
 
-        {/* Centered MainNav */}
-        <nav className="flex items-center mx-12">
-          <div className="flex items-center rounded-full bg-gray-200 p-1.5 px-2">
+        <nav className="flex items-center mx-12 bg-white/70 backdrop-blur-md border border-border rounded-full shadow-sm px-3 py-1 transition-all duration-300">
+          <div className="flex items-center gap-1">
             <Link
               href="/"
               className={cn(
                 "flex items-center transition-colors px-6 py-2 rounded-full cursor-pointer",
-                pathname === "/" ? "text-black bg-white shadow-sm" : " text-muted hover:text-black",
+                pathname === "/" ? "text-black bg-white shadow-sm" : "text-muted hover:text-black",
               )}
             >
               <span className="align-middle">Home</span>
@@ -60,7 +59,7 @@ export function SiteHeader() {
                 "flex items-center transition-colors px-6 py-2 rounded-full cursor-pointer",
                 pathname?.startsWith("/works")
                   ? "text-black bg-white shadow-sm"
-                  : " text-muted hover:text-black",
+                  : "text-muted hover:text-black",
               )}
             >
               <span className="align-middle">Works</span>
@@ -69,7 +68,7 @@ export function SiteHeader() {
               href="/feedbacks"
               className={cn(
                 "flex items-center transition-colors px-6 py-2 rounded-full cursor-pointer",
-                pathname?.startsWith("/feedbacks") ? "text-black bg-white shadow-sm" : " text-muted hover:text-black",
+                pathname?.startsWith("/feedbacks") ? "text-black bg-white shadow-sm" : "text-muted hover:text-black",
               )}
             >
               <span className="align-middle">Feedbacks</span>
@@ -78,9 +77,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex-shrink-0">
-        <Link href={"#book"} className="w-full">
-        <Button size="lg" className="w-full cursor-pointer">Book a 15-min Call</Button>
-        </Link>
+          <Link href={"#book"} className="w-full">
+            <Button size="lg" className="w-full cursor-pointer">Book a 15-min Call</Button>
+          </Link>
         </div>
       </div>
     </header>
@@ -91,42 +90,41 @@ export function MobileSiteFooterNav() {
   const pathname = usePathname()
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 z-[5000] md:hidden flex items-center justify-between bg-white dark:bg-secondary/80 backdrop-blur-md border border-border/40 rounded-full px-4 py-2 shadow-lg">
-      <div className="flex items-center gap-1.5">
+    <div className="fixed bottom-4 left-4 right-4 z-[5000] md:hidden flex items-center justify-between bg-white dark:bg-secondary/80 backdrop-blur-md border border-border/40 px-4 py-3 shadow-xl rounded-2xl">
+      <div className="flex items-center justify-between w-full max-w-screen-sm mx-auto">
         <Link
           href="/"
           className={cn(
-            "px-4 py-2 rounded-full text-sm font-medium transition-colors",
-            pathname === "/" ? "bg-muted border" : "text-muted-foreground"
+            "flex flex-col items-center justify-center px-3 py-1 rounded-lg text-xs font-medium transition-colors",
+            pathname === "/" ? "bg-muted" : "text-muted-foreground"
           )}
         >
-          Home
+          <span>Home</span>
         </Link>
         <Link
           href="/works"
           className={cn(
-            "px-4 py-2 rounded-full text-sm font-medium transition-colors",
-            pathname?.startsWith("/works") ? "bg-muted border" : "text-muted-foreground"
+            "flex flex-col items-center justify-center px-3 py-1 rounded-lg text-xs font-medium transition-colors",
+            pathname?.startsWith("/works") ? "bg-muted" : "text-muted-foreground"
           )}
         >
-          Works
+          <span>Works</span>
         </Link>
         <Link
           href="/feedbacks"
           className={cn(
-            "px-4 py-2 rounded-full text-sm font-medium transition-colors",
-            pathname?.startsWith("/feedbacks") ? "bg-muted border" : "text-muted-foreground"
+            "flex flex-col items-center justify-center px-3 py-1 rounded-lg text-xs font-medium transition-colors",
+            pathname?.startsWith("/feedbacks") ? "bg-muted" : "text-muted-foreground"
           )}
         >
-          Feedbacks
+          <span>Feedbacks</span>
+        </Link>
+        <Link href={"#book"}>
+          <Button size={"sm"} className="text-xs px-4 py-2">
+            Book a Meet
+          </Button>
         </Link>
       </div>
-      <Link href={"#book"}>
-        <Button size={"sm"} className="text-sm px-3 py-1.5">
-          Book
-        </Button>
-      </Link>
     </div>
   )
 }
-

@@ -36,7 +36,7 @@ export default function FounderSection() {
             </Button>
           </Link>
 
-          <Link href={"https://wa.me/+917684091475?text=Hii,%20Saidev%20I%20want%20to%20discuss%20my%20Idea%20with%20you."} target="_blank" rel="noreferrer" className='w-full'>
+          <Link href={"https://l.devwtf.in/wp"} target="_blank" rel="noreferrer" className='w-full'>
             <Button size={"lg"} className='w-full bg-red-500 hover:bg-red-500 text-white text-xl cursor-pointer'>
               Talk to Founder
             </Button>
