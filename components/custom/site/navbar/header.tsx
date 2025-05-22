@@ -24,7 +24,7 @@ export function SiteHeader() {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 right-0 z-[5000] flex justify-center transition-all duration-500 ease-in-out",
+        "hidden md:flex fixed top-0 left-0 right-0 z-[5000] justify-center transition-all duration-500 ease-in-out",
       )}
     >
       <div
@@ -84,6 +84,49 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
+  )
+}
+
+export function MobileSiteFooterNav() {
+  const pathname = usePathname()
+
+  return (
+    <div className="fixed bottom-4 left-4 right-4 z-[5000] md:hidden flex items-center justify-between bg-white dark:bg-secondary/80 backdrop-blur-md border border-border/40 rounded-full px-4 py-2 shadow-lg">
+      <div className="flex items-center gap-1.5">
+        <Link
+          href="/"
+          className={cn(
+            "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+            pathname === "/" ? "bg-muted border" : "text-muted-foreground"
+          )}
+        >
+          Home
+        </Link>
+        <Link
+          href="/works"
+          className={cn(
+            "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+            pathname?.startsWith("/works") ? "bg-muted border" : "text-muted-foreground"
+          )}
+        >
+          Works
+        </Link>
+        <Link
+          href="/feedbacks"
+          className={cn(
+            "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+            pathname?.startsWith("/feedbacks") ? "bg-muted border" : "text-muted-foreground"
+          )}
+        >
+          Feedbacks
+        </Link>
+      </div>
+      <Link href={"#book"}>
+        <Button size={"sm"} className="text-sm px-3 py-1.5">
+          Book
+        </Button>
+      </Link>
+    </div>
   )
 }
 

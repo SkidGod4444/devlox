@@ -158,6 +158,10 @@
   }
 }
 
+@utility no-scrollbar {
+  @apply [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'];
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
