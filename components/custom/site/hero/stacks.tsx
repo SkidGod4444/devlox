@@ -35,7 +35,7 @@ export default function StacksComp() {
       </div>
 
       {/* Responsive statistics grid */}
-      <div className='flex flex-wrap justify-center items-center mb-10 gap-y-6'>
+      <div className='flex overflow-x-auto gap-4 px-4 py-6 sm:justify-center sm:flex-wrap sm:gap-y-6 sm:overflow-visible'>
         {[{
           value: 6,
           label: 'Completed Projects'
@@ -49,7 +49,7 @@ export default function StacksComp() {
           value: 4,
           label: 'Recognition Recived'
         }].map(({ value, label }, index) => (
-          <div key={index} className='rounded-2xl px-3 py-3 w-[250px] border-t-2 border-r border-border/60 border-opacity-80 m-3 bg-gradient-to-br from-background to-muted/60 border bg-background backdrop-blur-lg supports-[backdrop-filter]:bg-background dark:border-border shadow-2xl'>
+          <div key={index} className='rounded-2xl px-3 py-3 min-w-[250px] w-[250px] border-t-2 border-r border-border/60 border-opacity-80 m-3 bg-gradient-to-br from-background to-muted/60 border bg-background backdrop-blur-lg supports-[backdrop-filter]:bg-background dark:border-border shadow-2xl'>
             <CardContent className='flex flex-row'>
               <NumberTicker
                 value={value}

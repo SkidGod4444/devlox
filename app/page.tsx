@@ -30,12 +30,12 @@ export default function Home() {
 
       {/* Wrap the border elements in a container to limit their scope */}
       <div className="relative w-full">
-        <div className="absolute inset-y-0 left-0 w-2 border-l border-border ml-20" />
-        <div className="absolute inset-y-0 left-2 w-2 border-l border-border ml-8" />
-        <div className="absolute inset-y-0 right-0 w-2 border-r border-border mr-20" />
-        <div className="absolute inset-y-0 right-2 w-2 border-r border-border mr-8" />
+        <div className="hidden md:block absolute inset-y-0 left-0 w-2 border-l border-border ml-20" />
+        <div className="hidden md:block absolute inset-y-0 left-2 w-2 border-l border-border ml-8" />
+        <div className="hidden md:block absolute inset-y-0 right-0 w-2 border-r border-border mr-20" />
+        <div className="hidden md:block absolute inset-y-0 right-2 w-2 border-r border-border mr-8" />
 
-        <div className="flex flex-col items-center justify-center gap-30">
+        <div className="flex flex-col items-center justify-center gap-10 md:gap-30 mb-10">
           <ProjShowcase />
           <WinningEdge />
           <section id="pricing" className="flex flex-col h-full w-full">

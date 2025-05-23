@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function ServicesCard() {
   return (
-    <div className='flex flex-col items-center justify-center h-full w-full px-4'>
+    <div className='flex z-[500] flex-col items-center justify-center h-full w-full px-4'>
       <div className="flex flex-col mt-20 w-full max-w-[800px] mx-auto z-[500] rounded-4xl border-t-2 border-r border-border/60 border-opacity-80 m-3 bg-gradient-to-br from-secondary/40 to-muted/60 border bg-background backdrop-blur-lg supports-[backdrop-filter]:bg-background dark:border-border shadow-2xl items-center">
         <div className='flex flex-col gap-4 items-center justify-center p-5 w-full'>
           
@@ -35,8 +35,8 @@ export default function ServicesCard() {
             </Card>
           </div>
 
-          <div className="flex px-4 py-2 w-full max-w-[800px] rounded-full bg-background border items-center justify-center text-center">
-            <span className='text-sm sm:text-lg px-2'>
+          <div className="flex px-2 sm:px-4 py-2 w-full max-w-[800px] rounded-full bg-background border items-center justify-center text-center">
+            <span className='text-xs sm:text-sm md:text-lg px-1 sm:px-2 break-words'>
               We also offer standalone services: Backend only or Frontend development-only.
             </span>
           </div>
@@ -52,7 +52,7 @@ export default function ServicesCard() {
           <Button
             key={i}
             variant="secondary"
-            className='flex w-full sm:w-auto items-zcenter justify-start md:justify-center rounded-full border-t-2 border-r border-border/60 border-opacity-80 bg-secondary/50 hover:bg-secondary/50'
+            className='flex z-[500] w-full sm:w-auto items-center justify-start md:justify-center rounded-full border-t-2 border-r border-border/60 border-opacity-80 bg-secondary/50 hover:bg-secondary/50'
           >
             <Image
               src="/icons/tick-mark.png"
@@ -60,6 +60,7 @@ export default function ServicesCard() {
               width={26}
               height={26}
               className='invert mr-2'
+              draggable={false}
             />
             {text}
           </Button>
