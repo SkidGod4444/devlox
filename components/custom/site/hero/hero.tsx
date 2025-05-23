@@ -31,8 +31,8 @@ export default function HeroSection() {
         />
       </div>
 
-      <span className='text-sm sm:text-xl line-clamp-3 w-full max-w-[900px] mt-2 text-center text-muted-foreground px-2 text-center'>
-        I am a passionate and experienced web developer, dedicated to creating visually stunning and highly functional websites. Explore my portfolio to see the power of effective design in action
+      <span className='text-sm sm:text-xl line-clamp-3 w-full max-w-[900px] mt-2 text-center text-muted-foreground px-2'>
+        I am a passionate and experienced web developer, dedicated to creating visually stunning and highly functional websites.
       </span>
 
       <div className='relative flex mt-10 flex-col sm:flex-row items-center gap-4 sm:gap-5'>

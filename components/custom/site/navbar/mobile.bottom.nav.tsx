@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { Link } from "lucide-react"
+import Link from "next/link";
 import { usePathname } from "next/navigation"
 
 
@@ -15,7 +15,7 @@ export function MobileBottomNav() {
             href="/"
             className={cn(
               "flex flex-col items-center justify-center px-3 py-1 rounded-lg text-xs font-medium transition-colors",
-              pathname === "/" ? "bg-muted" : "text-muted-foreground"
+              pathname === "/" ? "bg-primary text-secondary" : "text-muted-foreground"
             )}
           >
             <span>Home</span>
@@ -24,7 +24,7 @@ export function MobileBottomNav() {
             href="/works"
             className={cn(
               "flex flex-col items-center justify-center px-3 py-1 rounded-lg text-xs font-medium transition-colors",
-              pathname?.startsWith("/works") ? "bg-muted" : "text-muted-foreground"
+              pathname?.startsWith("/works") ? "bg-primary text-secondary" : "text-muted-foreground"
             )}
           >
             <span>Works</span>
@@ -33,13 +33,13 @@ export function MobileBottomNav() {
             href="/feedbacks"
             className={cn(
               "flex flex-col items-center justify-center px-3 py-1 rounded-lg text-xs font-medium transition-colors",
-              pathname?.startsWith("/feedbacks") ? "bg-muted" : "text-muted-foreground"
+              pathname?.startsWith("/feedbacks") ? "bg-primary text-secondary" : "text-muted-foreground"
             )}
           >
             <span>Feedbacks</span>
           </Link>
           <Link href={"#book"}>
-            <Button size={"sm"} className="text-xs px-4 py-2">
+            <Button size={"sm"} className="text-xs px-4 py-2 cursor-pointer">
               Book a Meet
             </Button>
           </Link>

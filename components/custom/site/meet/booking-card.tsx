@@ -3,7 +3,7 @@ import Booker from './booker';
 
 export default function BookingCard() {
   return (
-    <div className="flex flex-col items-center justify-center h-full w-full px-2 sm:px-4 md:px-0">
+    <div className="flex z-[500] flex-col items-center justify-center h-full w-full px-2 sm:px-4 md:px-0">
       <div className="w-full px-2 sm:px-10 md:px-20 mb-10 sm:mb-20 md:mb-40">
         <div className="border-t border-border" />
       </div>

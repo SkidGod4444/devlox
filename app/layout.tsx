@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Devlox Studio by Saidev",
-      url: "https://devlox.devwtf.in",
+      url: "https://devwtf.in",
     },
   ],
   creator: "Devlox Studio",
@@ -69,8 +69,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://devlox.devwtf.in/og.png",
-        width: 1200,
-        height: 630,
       },
     ],
     type: "website",
@@ -80,13 +78,26 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Devlox Studio | Transforming your Ideas into Apps",
     description: "Devlox Studio is a software development team that specializes in creating innovative and user-friendly applications for various platforms. Our team of experienced developers and designers work closely with clients to bring their ideas to life, ensuring high-quality solutions that meet their needs.",
-    images: ["https://devlox.devwtf.in/og.png"],
-    creator: "@devloxstudio",
+    images: [
+      {
+        url: "https://devlox.devwtf.in/og.png",
+        width: 1200,
+        height: 630,
+        alt: `Devlox Studio OG Image`,
+      },
+    ],
+    creator: "@SaidevDhal",
+    site: "@devloxstudio",
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
   },
 };
 
@@ -117,6 +128,8 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <div className="flex h-full w-full">
+            <div className="md:hidden flex absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent pointer-events-none z-10" />
+            <div className="md:hidden flex absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent pointer-events-none z-10" />
             {children}
             </div>
           </ThemeProvider>
